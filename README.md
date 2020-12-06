@@ -1,7 +1,7 @@
 # UnitySpritePivotEditor
 Easily edits a 2D Sprite while maintaining it's world position, including it's children objects
 
-![example](https://github.com/cloudsandladders/UnitySpritePivotEditor/raw/main/example.gif)
+![example](https://github.com/thepowerprocess/UnitySpritePivotEditor/raw/main/example.gif)
 
 ## How to use 
 
