@@ -1,5 +1,5 @@
 # UnitySpritePivotEditor
-Easily edits a 2D Sprite while maintaining it's world position, including it's children objects
+Easily edits a 2D Sprite while maintaining it's world position, including its children objects
 
 ![example](https://github.com/thepowerprocess/UnitySpritePivotEditor/raw/main/example.gif)
 
