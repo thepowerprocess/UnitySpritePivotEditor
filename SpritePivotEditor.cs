@@ -103,7 +103,7 @@ public class SpritePivotEditor : EditorWindow
             {
                 childrenWorldPosMap.Add(child, child.transform.position);
             }
-            selectedGameObject.transform.setWorldPosition(worldMousePos);
+            selectedGameObject.transform.position = worldMousePos;
             foreach (Transform child in selectedGameObject.transform)
             {
                 child.transform.position = childrenWorldPosMap[child];
