@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 
@@ -38,9 +38,11 @@ public class SpritePivotEditor : EditorWindow
         if (selectedGameObject == null) return;
 
         Event e = Event.current;
-        Vector2 mousePos = e.mousePosition;
-        mousePos.y = sceneView.camera.pixelHeight - mousePos.y;
-        Vector3 position = sceneView.camera.ScreenPointToRay(mousePos).origin;
+        Vector2 mousePos = HandleUtility.GUIPointToScreenPixelCoordinate(e.mousePosition);
+        Vector3 position = sceneView.camera.ScreenToWorldPoint(mousePos);
+        //Vector2 mousePos = e.mousePosition;
+        //mousePos.y = sceneView.camera.pixelHeight - mousePos.y;
+        //Vector3 position = sceneView.camera.ScreenPointToRay(mousePos).origin;
 
         if (e.type == EventType.KeyDown && e.keyCode == KeyCode.Escape)
         {
@@ -103,7 +105,7 @@ public class SpritePivotEditor : EditorWindow
             {
                 childrenWorldPosMap.Add(child, child.transform.position);
             }
-            selectedGameObject.transform.position = worldMousePos;
+            selectedGameObject.transform.position = new Vector3(worldMousePos.x, worldMousePos.y, selectedGameObject.transform.position.z);
             foreach (Transform child in selectedGameObject.transform)
             {
                 child.transform.position = childrenWorldPosMap[child];
