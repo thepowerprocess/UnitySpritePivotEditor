@@ -4,6 +4,10 @@ Easily edits a 2D Sprite while maintaining it's world position, including its ch
 ![example](https://github.com/thepowerprocess/UnitySpritePivotEditor/raw/main/example.gif)
 
 ## How to use 
+1) Download SpritePivotEditor.cs
+2) Place in an Editor folder in project
+
+## How to use 
 
 1) Select a gameobject with a SpriteRenderer and a Sprite set
 2) Go to <b> Tools > Set Sprite Pivot </b>
