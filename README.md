@@ -3,7 +3,7 @@ Easily edits a 2D Sprite while maintaining it's world position, including its ch
 
 ![example](https://github.com/thepowerprocess/UnitySpritePivotEditor/raw/main/example.gif)
 
-## How to use 
+## How to setup
 1) Download SpritePivotEditor.cs
 2) Place in an Editor folder in project
 
